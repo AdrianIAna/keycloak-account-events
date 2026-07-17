@@ -29,7 +29,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <keycloak.version>26.7.0</keycloak.version>
         <jakarta.ws.rs.version>3.1.0</jakarta.ws.rs.version>
-        <junit.version>5.14.3</junit.version>
+        <junit.version>6.1.2</junit.version>
         <mockito.version>5.23.0</mockito.version>
     </properties>
 

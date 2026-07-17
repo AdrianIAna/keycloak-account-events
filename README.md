@@ -61,8 +61,10 @@ authenticated subject, so a caller can only ever read their own events.
 
 Response: a JSON array of Keycloak `EventRepresentation` objects (`type`, `time`,
 `ipAddress`, `clientId`, `details`, ...). Any custom fields written into an event's
-`details` map by other SPIs (for example GeoIP/User-Agent enrichment) are passed
-through unchanged. To page through more events than the cap, repeat the request
+`details` map by other SPIs are passed through unchanged. Pair it with
+[keycloak-event-enrichment](https://github.com/AdrianIAna/keycloak-event-enrichment)
+and each event also carries GeoIP location and parsed User-Agent fields, ready
+for a "recent activity" UI. To page through more events than the cap, repeat the request
 with increasing `first` until a short page is returned.
 
 ### Responses
